@@ -1,0 +1,27 @@
+import React from 'react';
+import CustomInput from './CustomInput';
+
+const App: React.FC = () => {
+  return (
+    <div>
+      <h1>Formulário de Contato</h1>
+      <form>
+        <div>
+          <label htmlFor="name">Nome:</label>
+          <CustomInput type="text" placeholder="Digite seu nome" defaultValue="" />
+        </div>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <CustomInput type="email" placeholder="Digite seu email" defaultValue="" />
+        </div>
+        <div>
+          <label htmlFor="phone">Telefone:</label>
+          <CustomInput type="number" placeholder="Digite seu telefone" defaultValue="" />
+        </div>
+        <button type="button">Enviar</button>
+      </form>
+    </div>
+  );
+};
+
+export default App;
